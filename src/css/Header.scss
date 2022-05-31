@@ -1,0 +1,31 @@
+.header{
+    margin-bottom: 0px;
+    color: white;
+    width: auto;
+    height: 65px;
+    background-color: #672280;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+    #logo{
+        padding-left: 20px;
+        display: flex;
+        align-items: center;
+        #logoimg{
+            width: 31.31px;
+            height: 26.22px;
+            object-fit: cover;
+        }
+        #logotitle{
+            margin-left: 10px;
+            font-size: 20.75px;
+            font-weight: bold;
+        }
+    }
+    #project{
+        padding-right: 20px;
+        font-size: 12px;
+        font-weight: normal;
+    }
+}

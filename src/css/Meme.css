@@ -1,0 +1,79 @@
+main {
+  padding: 36px;
+  display: block;
+}
+
+main .form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 40px 40px;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template: 40px 40px / 1fr 1fr;
+  gap: 17px;
+}
+
+main .form #text1, main .form #text2 {
+  font-size: 12px;
+  font-weight: 400;
+  border-radius: 5px;
+  border: 1px solid #D5D4D8;
+  text-align: center;
+}
+
+main .form #button {
+  background-color: #711F8D;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  grid-column: 1 / -1;
+  border: none;
+}
+
+main .meme {
+  margin-top: 20px;
+  margin-bottom: 0px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+main .meme #memeimage {
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  text-align: center;
+  width: 350px;
+  height: auto;
+  margin-bottom: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+main .meme .meme--text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000, 2px 2px 5px #000;
+}
+
+main .meme .bottom {
+  bottom: 0;
+}
+
+main .meme .top {
+  top: 0;
+}
+/*# sourceMappingURL=Meme.css.map */
