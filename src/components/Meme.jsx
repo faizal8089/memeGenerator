@@ -8,9 +8,15 @@ export default function Meme(){
     const [memeData, setMemeData] = useState({});
 
 
-    React.useEffect(()=>{fetch("https://api.imgflip.com/get_memes")
-    .then(response => response.json())
-    .then(data => setMemeData(data))}, [])
+    React.useEffect(()=>{
+        const getMemes = async () => {
+            const response = await fetch("https://api.imgflip.com/get_memes");
+            const data = await response.json();
+            setMemeData(data);
+        }
+        getMemes();
+    },
+    [])
 
 
 
